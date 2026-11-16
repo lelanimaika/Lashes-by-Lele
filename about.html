@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us | Lashes by Lele</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #fff7ad, #ffa9f9, #ffe0f2);
+    color: black;
+}
+
+.header {
+    background-color: #ff66c4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e94cae;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    background-color: #ffe0f2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 8px;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.nav {
+    background: linear-gradient(90deg, #fff7ad, #ffa9f9);
+    padding: 18px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ff66c4;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.nav a:hover {
+    background-color: #ff66c4;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 35px 8%;
+}
+
+.about-text {
+    width: 55%;
+}
+
+.decor {
+    font-size: 25px;
+    color: #e94cae;
+    letter-spacing: 8px;
+    margin: 12px 0;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #ff66c4;
+    text-underline-offset: 10px;
+}
+
+.about-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1.6;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.about-image {
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.values {
+    text-align: center;
+    padding: 25px 8% 45px;
+}
+
+.values h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: #ff66c4;
+    text-underline-offset: 8px;
+}
+
+.values-decor {
+    font-size: 25px;
+    color: #e94cae;
+    letter-spacing: 10px;
+    margin: 15px 0 25px;
+}
+
+.value-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.value {
+    width: 28%;
+    padding: 18px;
+}
+
+.value h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.value h3::before {
+    content: "✧ ";
+    color: #e94cae;
+}
+
+.value h3::after {
+    content: " ✧";
+    color: #e94cae;
+}
+
+.value p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #ff66c4;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    border-top: 3px solid #e94cae;
+}
+
+.footer p {
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .nav a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 25px 18px;
+        gap: 25px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 280px;
+        height: 330px;
+    }
+
+    .about-text h2 {
+        font-size: 34px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
+    .values h2 {
+        font-size: 32px;
+    }
+
+    .value-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .value {
+        width: 90%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="logo">LL</div>
+
+    <h1>LASHES BY LELE</h1>
+
+    <p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+
+</div>
+
+<div class="nav">
+
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="prices.html">Prices</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+<div class="about-content">
+
+    <div class="about-text">
+
+        <div class="decor">✧ ♡ ✧</div>
+
+        <h2>ABOUT US</h2>
+
+        <p>
+            Lashes by Lele is a lash beauty business based in Tlokweng,
+            Gaborone. It was started in late 2024 by a young dreamer,
+            Lelani Maika, professionally known as "Lele", whose main
+            goal is to enhance the already beautiful faces of women
+            of all age groups.
+        </p>
+
+        <p>
+            We offer classic, hybrid and volume lash styles to help
+            clients express their beauty and confidence.
+        </p>
+
+        <div class="decor">♡ ✦ ♡</div>
+
+    </div>
+
+    <div class="about-image">
+
+        <img src="images/about%20us.jpeg" alt="Lele, founder of Lashes by Lele">
+
+    </div>
+
+</div>
+
+<div class="values">
+
+    <div class="values-decor">✧ ♡ ✧ ♡ ✧</div>
+
+    <h2>OUR VALUES</h2>
+
+    <div class="values-decor">♡ ✦ ♡</div>
+
+    <div class="value-container">
+
+        <div class="value">
+            <h3>Care</h3>
+            <p>We put our clients first and make sure they feel comfortable and valued.</p>
+        </div>
+
+        <div class="value">
+            <h3>Quality</h3>
+            <p>We aim to provide beautiful lash applications with attention to detail.</p>
+        </div>
+
+        <div class="value">
+            <h3>Confidence</h3>
+            <p>We believe every woman deserves to feel beautiful and confident.</p>
+        </div>
+
+    </div>
+
+    <div class="values-decor">✧ ♡ ✧</div>
+
+</div>
+
+<div class="footer">
+
+    <p>Lashes by Lele | Tlokweng, Gaborone</p>
+
+    <p>Bookings via WhatsApp and Instagram</p>
+
+    <p>♡ Beauty begins with you ♡</p>
+
+</div>
+
+</body>
+</html>

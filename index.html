@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home | Lashes by Lele</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #fff7ad, #ffa9f9, #ffe0f2);
+    color: black;
+}
+
+.header {
+    background-color: #ff66c4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #e94cae;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    background-color: #ffe0f2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 8px;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.nav {
+    background: linear-gradient(90deg, #fff7ad, #ffa9f9);
+    padding: 18px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ff66c4;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.nav a:hover {
+    background-color: #ff66c4;
+    color: white;
+}
+
+.main {
+    padding: 12px 8% 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+    position: relative;
+}
+
+.main-text {
+    width: 55%;
+    padding-top: 0;
+}
+
+.main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #ff66c4;
+    text-underline-offset: 12px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.main h2::before {
+    content: "✦ ";
+    color: #ff66c4;
+    font-size: 32px;
+}
+
+.main p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1.6;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.main p.special {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #b52d80;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.decor {
+    font-size: 25px;
+    color: #e94cae;
+    letter-spacing: 8px;
+    margin: 12px 0;
+}
+
+.main-image {
+    width: 40%;
+    margin-top: 5px;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.button:hover {
+    background-color: #ff66c4;
+    color: black;
+}
+
+.footer {
+    background-color: #ff66c4;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    border-top: 3px solid #e94cae;
+}
+
+.footer p {
+    margin: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .nav a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .main {
+        padding: 15px 18px 40px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .main h2 {
+        font-size: 36px;
+    }
+
+    .main p {
+        font-size: 20px;
+    }
+
+    .main p.special {
+        font-size: 28px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="logo">LL</div>
+
+    <h1>LASHES BY LELE</h1>
+
+    <p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+
+</div>
+
+<div class="nav">
+
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="prices.html">Prices</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+<div class="main">
+
+    <div class="main-text">
+
+        <div class="decor">✧ ♡ ✧</div>
+
+        <h2>WAKE UP BEAUTIFUL!</h2>
+
+        <p>Welcome to Lashes by Lele, where beauty meets confidence and every blink tells a story.</p>
+
+        <p>Enhance your natural beauty with beautifully crafted lashes designed to complement your eyes and bring out your unique elegance.</p>
+
+        <p>Whether you love a soft, natural look or full, glamorous lashes, we have the perfect style waiting for you.</p>
+
+        <p class="special">Because every girl deserves to feel beautiful, confident and effortlessly stunning.</p>
+
+        <div class="decor">♡ ✦ ♡</div>
+
+        <a class="button" href="booking.html">BOOK NOW</a>
+
+    </div>
+
+    <div class="main-image">
+
+        <img src="images/home-lashes .jpeg" alt="Lash look by Lashes by Lele">
+
+    </div>
+
+</div>
+
+<div class="footer">
+
+    <p>Lashes by Lele | Tlokweng, Gaborone</p>
+
+    <p>Bookings via WhatsApp and Instagram</p>
+
+    <p>♡ Beauty begins with you ♡</p>
+
+</div>
+
+</body>
+</html>

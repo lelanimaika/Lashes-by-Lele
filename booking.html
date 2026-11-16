@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking | Lashes by Lele</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(120deg, #fff7ad, #ffa9f9, #ffe0f2);
+color: black;
+}
+
+.header {
+background: #ff66c4;
+padding: 20px;
+text-align: center;
+border-bottom: 3px solid #e94cae;
+}
+
+.logo {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+background: #ffe0f2;
+border: 2px solid black;
+margin: 0 auto 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Great Vibes', cursive;
+font-size: 42px;
+box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+letter-spacing: 3px;
+margin: 5px;
+}
+
+.header p {
+font-size: 15px;
+font-weight: 600;
+letter-spacing: 4px;
+margin: 5px;
+}
+
+.nav {
+background: linear-gradient(90deg, #fff7ad, #ffa9f9);
+padding: 18px 10px;
+text-align: center;
+border-bottom: 2px solid #e94cae;
+}
+
+.nav a {
+display: inline-block;
+padding: 10px 16px;
+color: black;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+border-radius: 20px;
+}
+
+.nav a:hover {
+background: #ff66c4;
+}
+
+.booking-section {
+padding: 30px 20px 50px;
+text-align: center;
+}
+
+.booking-section h2 {
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+margin-bottom: 25px;
+text-decoration: underline;
+text-decoration-color: #ff66c4;
+text-underline-offset: 10px;
+}
+
+.booking-form {
+width: 60%;
+max-width: 600px;
+margin: 0 auto;
+padding: 30px;
+background: rgba(255,255,255,0.55);
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.form-group {
+margin-bottom: 18px;
+text-align: left;
+}
+
+.form-group label {
+display: block;
+font-size: 15px;
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+width: 100%;
+padding: 13px;
+border: 1px solid #e94cae;
+border-radius: 8px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+outline: 2px solid #ff66c4;
+}
+
+.submit-button {
+background: black;
+color: white;
+border: none;
+padding: 14px 35px;
+border-radius: 25px;
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+font-weight: 600;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.submit-button:hover {
+background: #ff66c4;
+color: black;
+}
+
+.footer {
+background: #ff66c4;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+}
+
+@media (max-width: 600px) {
+.header h1 {
+font-size: 30px;
+}
+
+.header p {
+font-size: 11px;
+letter-spacing: 2px;
+}
+
+.nav a {
+font-size: 13px;
+padding: 8px;
+}
+
+.booking-section h2 {
+font-size: 32px;
+}
+
+.booking-form {
+width: 95%;
+padding: 20px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">LL</div>
+<h1>LASHES BY LELE</h1>
+<p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+</div>
+
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="prices.html">Prices</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="booking-section">
+<h2>BOOK AN APPOINTMENT</h2>
+
+<form class="booking-form" onsubmit="sendBooking(event)">
+
+<div class="form-group">
+<label>FULL NAME</label>
+<input type="text" id="fullname" placeholder="Enter your full name" required>
+</div>
+
+<div class="form-group">
+<label>CONTACT NUMBER</label>
+<input type="tel" id="contact" placeholder="Enter your contact number" required>
+</div>
+
+<div class="form-group">
+<label>CHOOSE A SERVICE</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option value="Classic Lashes">Classic Lashes</option>
+<option value="Hybrid Lashes">Hybrid Lashes</option>
+<option value="Volume Lashes">Volume Lashes</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>PREFERRED DATE</label>
+<input type="date" id="date" required>
+</div>
+
+<div class="form-group">
+<label>PREFERRED TIME</label>
+<input type="time" id="time" required>
+</div>
+
+<button type="submit" class="submit-button">SUBMIT &gt;</button>
+
+</form>
+</div>
+
+<div class="footer">
+<p>Lashes by Lele | Tlokweng, Gaborone</p>
+<p>Bookings via WhatsApp and Instagram</p>
+</div>
+
+<script>
+function sendBooking(event) {
+event.preventDefault();
+
+var name = document.getElementById("fullname").value;
+var contact = document.getElementById("contact").value;
+var service = document.getElementById("service").value;
+var date = document.getElementById("date").value;
+var time = document.getElementById("time").value;
+
+var message = "Hello Lashes by Lele! I would like to book an appointment.%0A%0AFull Name: " + encodeURIComponent(name) + "%0AContact Number: " + encodeURIComponent(contact) + "%0AService: " + encodeURIComponent(service) + "%0APreferred Date: " + encodeURIComponent(date) + "%0APreferred Time: " + encodeURIComponent(time);
+
+window.open("https://wa.me/26777053851?text=" + message, "_blank");
+}
+</script>
+
+</body>
+</html>

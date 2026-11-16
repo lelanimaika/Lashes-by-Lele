@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Price List | Lashes by Lele</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(120deg, #fff7ad, #ffa9f9, #ffe0f2);
+color: black;
+}
+
+.header {
+background: #ff66c4;
+padding: 20px;
+text-align: center;
+border-bottom: 3px solid #e94cae;
+}
+
+.logo {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+background: #ffe0f2;
+border: 2px solid black;
+margin: 0 auto 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Great Vibes', cursive;
+font-size: 42px;
+box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 42px;
+letter-spacing: 3px;
+margin: 5px;
+}
+
+.header p {
+font-size: 15px;
+font-weight: 600;
+letter-spacing: 4px;
+margin: 5px;
+}
+
+.nav {
+background: linear-gradient(90deg, #fff7ad, #ffa9f9);
+padding: 18px 10px;
+text-align: center;
+border-bottom: 2px solid #e94cae;
+}
+
+.nav a {
+display: inline-block;
+padding: 10px 16px;
+color: black;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+border-radius: 20px;
+}
+
+.nav a:hover {
+background: #ff66c4;
+}
+
+.price-section {
+padding: 35px 8% 60px;
+text-align: center;
+}
+
+.price-section h2 {
+font-family: 'Playfair Display', serif;
+font-size: 45px;
+margin-bottom: 35px;
+text-decoration: underline;
+text-decoration-color: #ff66c4;
+text-underline-offset: 10px;
+}
+
+.price-table {
+width: 85%;
+margin: 0 auto;
+border-collapse: collapse;
+background: rgba(255,255,255,0.65);
+box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.price-table th {
+background: #ff66c4;
+font-family: 'Playfair Display', serif;
+font-size: 23px;
+padding: 18px;
+}
+
+.price-table td {
+padding: 20px;
+font-family: 'Cormorant Garamond', serif;
+font-size: 24px;
+font-weight: 700;
+border-bottom: 1px solid #e94cae;
+}
+
+.price-table tr:last-child td {
+border-bottom: none;
+}
+
+.price-button {
+display: inline-block;
+margin-top: 40px;
+padding: 14px 30px;
+background: black;
+color: white;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+border-radius: 25px;
+}
+
+.price-button:hover {
+background: #ff66c4;
+color: black;
+}
+
+.footer {
+background: #ff66c4;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+.header h1 {
+font-size: 30px;
+}
+
+.header p {
+font-size: 11px;
+letter-spacing: 2px;
+}
+
+.nav a {
+font-size: 13px;
+padding: 8px;
+}
+
+.price-section h2 {
+font-size: 34px;
+}
+
+.price-table {
+width: 100%;
+}
+
+.price-table th {
+font-size: 18px;
+}
+
+.price-table td {
+font-size: 19px;
+padding: 14px 8px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">LL</div>
+<h1>LASHES BY LELE</h1>
+<p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+</div>
+
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="prices.html">Prices</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="price-section">
+<h2>PRICE LIST</h2>
+
+<table class="price-table">
+<tr>
+<th>SERVICE</th>
+<th>PRICE</th>
+</tr>
+<tr>
+<td>CLASSIC LASHES</td>
+<td>P60</td>
+</tr>
+<tr>
+<td>HYBRID LASHES</td>
+<td>P60</td>
+</tr>
+<tr>
+<td>VOLUME LASHES</td>
+<td>P90</td>
+</tr>
+<tr>
+<td>INFILLS / REFILLS</td>
+<td>Original price of service plus P20</td>
+</tr>
+</table>
+
+<a href="booking.html" class="price-button">BOOK AN APPOINTMENT &gt;</a>
+</div>
+
+<div class="footer">
+<p>Lashes by Lele | Tlokweng, Gaborone</p>
+<p>Bookings via WhatsApp and Instagram</p>
+</div>
+
+</body>
+</html>

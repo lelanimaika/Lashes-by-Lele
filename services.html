@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services | Lashes by Lele</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;background:linear-gradient(90deg,#fff7ad,#ffa9f9);font-family:'Poppins',sans-serif;color:black;}
+.header{background:#ff66c4;text-align:center;padding:20px;border-radius:0 0 15px 15px;}
+.header h1{font-family:'Playfair Display',serif;font-size:40px;margin:0;color:black;}
+.header p{font-size:16px;font-weight:800;margin:2px;}
+.nav{text-align:center;padding:25px 10px;}
+.nav a{color:black;text-decoration:none;font-size:17px;font-weight:700;margin:0 6px;}
+.nav a:hover{color:#d60083;text-decoration:underline;}
+.services{text-align:center;padding:25px 20px 65px;}
+.services h2{font-size:36px;font-weight:800;margin:15px 0 40px;text-decoration:underline;text-decoration-color:#ff66c4;text-underline-offset:10px;}
+.container{display:flex;justify-content:center;gap:25px;max-width:1200px;margin:auto;}
+.column{width:33.33%;display:flex;flex-direction:column;align-items:center;}
+.column img{width:100%;height:380px;object-fit:cover;border-radius:12px;border:3px solid #ff66c4;box-shadow:0 5px 15px rgba(0,0,0,0.15);}
+.column p{font-size:22px;line-height:1.6;margin:22px 0 25px;max-width:320px;flex-grow:1;}
+.column strong{font-weight:800;}
+.button{display:inline-block;background:black;color:white;text-decoration:none;font-size:21px;font-weight:800;padding:13px 22px;border-radius:12px;transition:0.3s;}
+.button:hover{background:#d60083;transform:scale(1.05);}
+.footer{background:#ff66c4;text-align:center;padding:17px;font-size:17px;border-radius:15px 15px 0 0;}
+.footer p{margin:3px;}
+@media(max-width:700px){
+.header h1{font-size:30px;}
+.nav a{display:inline-block;font-size:14px;margin:5px;}
+.services h2{font-size:28px;}
+.container{flex-direction:column;align-items:center;}
+.column{width:100%;max-width:400px;margin-bottom:35px;}
+.column img{height:350px;}
+.column p{font-size:20px;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>LASHES BY LELE</h1>
+<p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+</div>
+<div class="nav">
+<a href="home.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="services.html">Services</a> |
+<a href="prices.html">Prices</a> |
+<a href="gallery.html">Gallery</a> |
+<a href="booking.html">Booking</a> |
+<a href="contact.html">Contact</a>
+</div>
+<div class="services">
+<h2>OUR LASH SERVICES</h2>
+<div class="container">
+<div class="column">
+<img src="images/classic.webp" alt="Classic lash extensions">
+<p><strong>CLASSIC:</strong> A soft, natural looking style.</p>
+<a href="booking.html" class="button">BOOK NOW &rsaquo;</a>
+</div>
+<div class="column">
+<img src="images/hybrid.jpg" alt="Hybrid lash extensions">
+<p><strong>HYBRID:</strong> A combination of classic and volume styles.</p>
+<a href="booking.html" class="button">BOOK NOW &rsaquo;</a>
+</div>
+<div class="column">
+<img src="images/volume.webp" alt="Volume lash extensions">
+<p><strong>VOLUME:</strong> A fuller, more dramatic look.</p>
+<a href="booking.html" class="button">BOOK NOW &rsaquo;</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Lashes by Lele | Tlokweng, Gaborone</p>
+<p>Bookings via WhatsApp and Instagram</p>
+</div>
+</body>
+</html>

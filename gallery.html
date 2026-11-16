@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery | Lashes by Lele</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;background:linear-gradient(90deg,#fff7ad,#ffa9f9);font-family:'Poppins',sans-serif;color:black;}
+.header{background-color:#ff66c4;text-align:center;padding:20px;border-radius:0 0 15px 15px;}
+.header h1{font-family:'Playfair Display',serif;font-size:40px;margin:0;color:black;}
+.header p{font-size:16px;font-weight:800;margin:2px;}
+.nav{text-align:center;padding:25px 10px;}
+.nav a{color:black;text-decoration:none;font-size:17px;font-weight:700;margin:0 6px;}
+.nav a:hover{color:#d60083;text-decoration:underline;}
+.gallery{text-align:center;padding:25px 20px 55px;}
+.gallery h2{font-size:36px;font-weight:800;margin:15px 0 35px;text-decoration:underline;text-decoration-color:#ff66c4;text-underline-offset:10px;}
+.gallery-container{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 45px;max-width:850px;margin:0 auto 60px;}
+.gallery-item{width:100%;height:280px;overflow:hidden;border-radius:10px;border:3px solid #ff66c4;box-shadow:0 5px 15px rgba(0,0,0,0.15);background:black;}
+.gallery-item img,.gallery-item video{width:100%;height:100%;object-fit:cover;display:block;}
+.button{display:block;background:black;color:white;text-decoration:none;font-size:23px;font-weight:800;padding:16px 25px;border-radius:12px;max-width:850px;margin:auto;transition:0.3s;}
+.button:hover{background:#d60083;transform:scale(1.02);}
+.footer{background:#ff66c4;text-align:center;padding:17px;font-size:17px;border-radius:15px 15px 0 0;}
+.footer p{margin:3px;}
+@media(max-width:700px){
+.header h1{font-size:30px;}
+.nav a{display:inline-block;font-size:14px;margin:5px;}
+.gallery h2{font-size:28px;}
+.gallery-container{grid-template-columns:1fr;gap:20px;max-width:400px;}
+.gallery-item{height:290px;}
+.button{font-size:20px;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>LASHES BY LELE</h1>
+<p>BEAUTY. CONFIDENCE. ELEGANCE.</p>
+</div>
+<div class="nav">
+<a href="home.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="services.html">Services</a> |
+<a href="prices.html">Prices</a> |
+<a href="gallery.html">Gallery</a> |
+<a href="booking.html">Booking</a> |
+<a href="contact.html">Contact</a>
+</div>
+<div class="gallery">
+<h2>OUR GALLERY</h2>
+<div class="gallery-container">
+<div class="gallery-item">
+<img src="images/gallery1.jpeg" alt="Lashes by Lele gallery picture">
+</div>
+<div class="gallery-item">
+<video controls playsinline preload="metadata">
+<source src="images/gallery2.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+</div>
+<div class="gallery-item">
+<img src="images/gallery3.webp" alt="Hybrid lash extensions">
+</div>
+<div class="gallery-item">
+<video controls playsinline preload="metadata">
+<source src="images/gallery.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+</div>
+<a href="booking.html" class="button">BOOK NOW</a>
+</div>
+<div class="footer">
+<p>Lashes by Lele | Tlokweng, Gaborone</p>
+<p>Bookings via WhatsApp and Instagram</p>
+</div>
+</body>
+</html>
